@@ -1,0 +1,811 @@
+{
+  "intents": [
+    {
+      "intent": "adjustbrightness",
+      "examples": [
+        {
+          "text": "how can i adjust brightness"
+        },
+        {
+          "text": "adjust my watch brighness"
+        },
+        {
+          "text": "adjust brightness"
+        },
+        {
+          "text": "how do i adjust brightness"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "thankyou",
+      "examples": [
+        {
+          "text": "thank you"
+        },
+        {
+          "text": "see you"
+        },
+        {
+          "text": "good bye"
+        },
+        {
+          "text": "bye"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "customisewatchphase",
+      "examples": [
+        {
+          "text": "how do i customize watch phases"
+        },
+        {
+          "text": "customize watch phase"
+        },
+        {
+          "text": "watch phase customization"
+        },
+        {
+          "text": "change watch phase"
+        },
+        {
+          "text": "add watch phase"
+        },
+        {
+          "text": "customize watch phases"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "resetwatch",
+      "examples": [
+        {
+          "text": "reset watch"
+        },
+        {
+          "text": "please reset my watch"
+        },
+        {
+          "text": "how to erase all thongs"
+        },
+        {
+          "text": "how to erase all files in my watch"
+        },
+        {
+          "text": "erase all things"
+        },
+        {
+          "text": "reset or erase all things"
+        },
+        {
+          "text": "erase or reset apple watch"
+        },
+        {
+          "text": "how do i reset my apple watch"
+        },
+        {
+          "text": "how can i reset my apple watch"
+        },
+        {
+          "text": "how can i reset my watch"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "changelanguageorientation",
+      "examples": [
+        {
+          "text": "how to change language in my watch"
+        },
+        {
+          "text": "how to change lnguge"
+        },
+        {
+          "text": "how to update orientation"
+        },
+        {
+          "text": "how do update langauge"
+        },
+        {
+          "text": "how can i change language and orientation"
+        },
+        {
+          "text": "how to change language"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "greetings",
+      "examples": [
+        {
+          "text": "gud evng"
+        },
+        {
+          "text": "good morning"
+        },
+        {
+          "text": "hi there"
+        },
+        {
+          "text": "good mrng"
+        },
+        {
+          "text": "hai there"
+        },
+        {
+          "text": "hello"
+        },
+        {
+          "text": "hai"
+        },
+        {
+          "text": "hey"
+        },
+        {
+          "text": "gud mrng"
+        },
+        {
+          "text": "good evening"
+        },
+        {
+          "text": "hey there"
+        },
+        {
+          "text": "gm"
+        },
+        {
+          "text": "good night"
+        },
+        {
+          "text": "gd afternoon"
+        },
+        {
+          "text": "good afternoon"
+        },
+        {
+          "text": "gud afternoon"
+        },
+        {
+          "text": "good evng"
+        },
+        {
+          "text": "gd evng"
+        },
+        {
+          "text": "gud nyght"
+        },
+        {
+          "text": "gd nyt"
+        },
+        {
+          "text": "gd n8"
+        }
+      ],
+      "description": ""
+    },
+    {
+      "intent": "watch_information",
+      "examples": [
+        {
+          "text": "how to connect with my iphone"
+        },
+        {
+          "text": "how to restore my photos"
+        }
+      ],
+      "description": ""
+    }
+  ],
+  "entities": [
+    {
+      "entity": "thank",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "Good speaking with you",
+          "synonyms": [
+            "good to see you",
+            "nice chat",
+            "nice conversation",
+            "thank you",
+            "tq",
+            "tank u",
+            "thank u",
+            "good speking wiht u",
+            "bye ",
+            "see you",
+            "see ya",
+            "nice talking with you",
+            "nice to speak with you"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "bye",
+          "synonyms": [
+            "see you",
+            "good bye"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "greet",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "good evening",
+          "synonyms": [
+            "gud evng",
+            "gd evng",
+            "good evening",
+            "gud eve",
+            "gd eve"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good night",
+          "synonyms": [
+            "gud n8",
+            "gud nyt",
+            "gud nyght",
+            "good n8"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "welcome",
+          "synonyms": [
+            "welcom",
+            "hello",
+            "ha",
+            "hai",
+            "hi there",
+            "hii",
+            "hey",
+            "hola",
+            "caio",
+            "hello there"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good morning",
+          "synonyms": [
+            "gud mrng",
+            "gm",
+            "good mrng",
+            "gd morning"
+          ]
+        },
+        {
+          "type": "synonyms",
+          "value": "good afternoon",
+          "synonyms": [
+            "gud afternoon",
+            "gf",
+            "gud afn",
+            "good after"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    },
+    {
+      "entity": "watchinfo",
+      "values": [
+        {
+          "type": "synonyms",
+          "value": "how to connect with my iphone",
+          "synonyms": [
+            "connect with iphone",
+            "conekt with phone",
+            "how do i connect with my iphone",
+            "how i connect with my mobile",
+            "how to connect my watch to phone",
+            "connect watch with iphone",
+            "watch phone connection",
+            "connkt watch with mobile device"
+          ]
+        }
+      ],
+      "fuzzy_match": true
+    }
+  ],
+  "metadata": {
+    "api_version": {
+      "major_version": "v2",
+      "minor_version": "2018-11-08"
+    }
+  },
+  "webhooks": [
+    {
+      "url": "https://eu-gb.functions.cloud.ibm.com/api/v1/web/si05202000095%40smartinternz.com_dev/default/assistantintegrator.json",
+      "name": "main_webhook",
+      "headers": []
+    }
+  ],
+  "dialog_nodes": [
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "please rephrase"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "Anything else",
+      "conditions": "anything_else",
+      "dialog_node": "response_10_1591276218467",
+      "previous_sibling": "response_1_1591338321069"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "\"<?$webhook_result_2.passages[0].passage_text?>\""
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "Anything else",
+      "conditions": "$webhook_result_2",
+      "dialog_node": "response_1_1591338321069"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Good to see you",
+            "Bye! take care",
+            "Have a nice day"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_10_1591000083645",
+      "conditions": "@thank:bye",
+      "dialog_node": "response_1_1591004812314",
+      "previous_sibling": "response_9_1591000113322"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "i'm pleased to speak with you, bye"
+              },
+              {
+                "text": "Nice talking to you"
+              },
+              {
+                "text": "thank you have a nice day!"
+              },
+              {
+                "text": "good to see you"
+              },
+              {
+                "text": "thank you  so much"
+              },
+              {
+                "text": "see you soon!"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_10_1591000083645",
+      "conditions": "@thank:(Good speaking with you)",
+      "dialog_node": "response_9_1591000113322"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_5_1591338512972",
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1591338529275",
+      "previous_sibling": "response_8_1591338527845"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_5.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1591338512972",
+      "conditions": "$webhook_result_5",
+      "dialog_node": "response_8_1591338527845"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_5_1591336055887",
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1591336075867",
+      "previous_sibling": "response_10_1591336074213"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_1.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_5_1591336055887",
+      "conditions": "$webhook_result_1",
+      "dialog_node": "response_10_1591336074213"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Try again later"
+          ],
+          "selection_policy": "sequential"
+        }
+      },
+      "parent": "node_1_1591337001069",
+      "conditions": "anything_else",
+      "dialog_node": "response_4_1591337025503",
+      "previous_sibling": "response_8_1591337023853"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_3.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_1_1591337001069",
+      "conditions": "$webhook_result_3",
+      "dialog_node": "response_8_1591337023853"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Good Night!",
+            "Dreams are waiting for you, good night",
+            "Good Night, Sweet Dreamzz"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_9_1590999410459",
+      "conditions": "@greet:(good night)",
+      "dialog_node": "response_2_1590999599671",
+      "previous_sibling": "response_2_1590999542603"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "Happy to see you",
+            "Hi there!",
+            "Good to see you",
+            "Hai i'm delighted to speak with you"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_9_1590999410459",
+      "conditions": "@greet:welcome",
+      "dialog_node": "response_6_1590999676389",
+      "previous_sibling": "response_2_1590999599671"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "A very good afternoon",
+            "Good Afternoon"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_9_1590999410459",
+      "conditions": "@greet:(good afternoon)",
+      "dialog_node": "response_3_1590999510166",
+      "previous_sibling": "response_9_1590999426928"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "text": {
+          "values": [
+            "A very good evening",
+            "A pleasant evening",
+            "I love sunny evenings"
+          ],
+          "selection_policy": "random"
+        }
+      },
+      "parent": "node_9_1590999410459",
+      "conditions": "@greet:(good evening)",
+      "dialog_node": "response_2_1590999542603",
+      "previous_sibling": "response_3_1590999510166"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "good moring"
+              },
+              {
+                "text": "A pleasant morning"
+              },
+              {
+                "text": "A very good morning"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "parent": "node_9_1590999410459",
+      "conditions": "@greet:(good morning)",
+      "dialog_node": "response_9_1590999426928"
+    },
+    {
+      "type": "response_condition",
+      "parent": "node_7_1591338427271",
+      "conditions": "anything_else",
+      "dialog_node": "response_2_1591338444295",
+      "previous_sibling": "response_5_1591338442570"
+    },
+    {
+      "type": "response_condition",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "\"<?$webhook_result_4.passages[0].passage_text?>\""
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "sequential"
+          }
+        ]
+      },
+      "parent": "node_7_1591338427271",
+      "conditions": "$webhook_result_4",
+      "dialog_node": "response_5_1591338442570"
+    },
+    {
+      "type": "standard",
+      "title": "change language ",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input_text?>"
+          },
+          "result_variable": "webhook_result_1"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#changelanguageorientation",
+      "dialog_node": "node_5_1591336055887",
+      "previous_sibling": "node_10_1591000083645"
+    },
+    {
+      "type": "standard",
+      "title": "Anything else",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input_text?>"
+          },
+          "result_variable": "webhook_result_2"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "anything_else",
+      "dialog_node": "Anything else",
+      "previous_sibling": "node_5_1591338512972",
+      "disambiguation_opt_out": true
+    },
+    {
+      "type": "standard",
+      "title": "adjust brightness",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input_text?>"
+          },
+          "result_variable": "webhook_result_4"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#adjustbrightness",
+      "dialog_node": "node_7_1591338427271",
+      "previous_sibling": "node_5_1591336055887"
+    },
+    {
+      "type": "standard",
+      "title": "reset watch",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input_text?>"
+          },
+          "result_variable": "webhook_result_5"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#resetwatch",
+      "dialog_node": "node_5_1591338512972",
+      "previous_sibling": "node_1_1591337001069"
+    },
+    {
+      "type": "standard",
+      "title": "thank you",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@thank || @thank",
+      "dialog_node": "node_10_1591000083645",
+      "previous_sibling": "node_9_1590999410459"
+    },
+    {
+      "type": "standard",
+      "title": "greetings",
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "@greet",
+      "dialog_node": "node_9_1590999410459",
+      "previous_sibling": "Welcome"
+    },
+    {
+      "type": "standard",
+      "title": "change watch phase",
+      "actions": [
+        {
+          "name": "main_webhook",
+          "type": "webhook",
+          "parameters": {
+            "input": "<?input.text?>"
+          },
+          "result_variable": "webhook_result_3"
+        }
+      ],
+      "metadata": {
+        "_customization": {
+          "mcr": true
+        }
+      },
+      "conditions": "#customisewatchphase",
+      "dialog_node": "node_1_1591337001069",
+      "previous_sibling": "node_7_1591338427271"
+    },
+    {
+      "type": "standard",
+      "title": "Welcome",
+      "output": {
+        "generic": [
+          {
+            "values": [
+              {
+                "text": "Hi! there  how can I help you?"
+              },
+              {
+                "text": "Hi ask me anything"
+              },
+              {
+                "text": "hello good to see you"
+              },
+              {
+                "text": "hai happy to see you"
+              }
+            ],
+            "response_type": "text",
+            "selection_policy": "random"
+          }
+        ]
+      },
+      "conditions": "welcome",
+      "dialog_node": "Welcome"
+    }
+  ],
+  "counterexamples": [],
+  "system_settings": {
+    "off_topic": {
+      "enabled": true
+    },
+    "disambiguation": {
+      "prompt": "Did you mean:",
+      "enabled": true,
+      "randomize": true,
+      "max_suggestions": 5,
+      "suggestion_text_policy": "title",
+      "none_of_the_above_prompt": "None of the above"
+    },
+    "system_entities": {
+      "enabled": true
+    },
+    "human_agent_assist": {
+      "prompt": "Did you mean:"
+    },
+    "spelling_auto_correct": true
+  },
+  "learning_opt_out": false,
+  "name": "Help Desk CHatbot",
+  "language": "en",
+  "description": ""
+}
