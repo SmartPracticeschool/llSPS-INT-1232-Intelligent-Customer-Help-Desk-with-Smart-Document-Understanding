@@ -1,0 +1,2 @@
+Chatbot Interaction Page Link : 
+https://node-red-tfrre.eu-gb.mybluemix.net/ui/#!/1?socketid=0USRiIgb9X2MK-t6AAAA
